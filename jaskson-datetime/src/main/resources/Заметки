@@ -1,0 +1,19 @@
+Если нужно, чтобы все поля LocalDateTime в проекте сериализовались в этом формате, можно добавить конфигурацию:
+
+@Configuration
+public class JacksonConfig {
+
+    private static final String DATETIME_FORMAT = "yyyy:MM:dd'##':HH:mm:ss:SSS";
+
+    @Bean
+    public Jackson2ObjectMapperBuilderCustomizer jsonCustomizer() {
+        return builder -> builder
+                .serializers(
+                    new LocalDateTimeSerializer(
+                        DateTimeFormatter.ofPattern(DATETIME_FORMAT, Locale.forLanguageTag("ru-RU"))
+                    )
+                );
+    }
+}
+
+и @JsonFormat можно не ставить на каждое поле — формат применится глобально.
