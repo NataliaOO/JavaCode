@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="StreamOrdersSorting" />
+        <module name="cyclicbarrier-executor" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="concurrent-blocking-queue" target="23" />
+    </bytecodeTargetLevel>
   </component>
 </project>
