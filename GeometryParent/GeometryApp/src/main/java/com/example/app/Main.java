@@ -17,7 +17,7 @@ public class Main {
 
         System.out.println("== GeometryApp: areas & perimeters ==");
         for (Shape2D s : shapes) {
-            System.out.printf("%-21s area=%8.3f  perimeter=%8.3f%n",
+            System.out.printf("%-25s area=%8.3f  perimeter=%8.3f%n",
                     s, s.area(), s.perimeter());
         }
     }
