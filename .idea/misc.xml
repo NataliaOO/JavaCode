@@ -4,7 +4,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/parallelStream/pom.xml" />
+        <option value="$PROJECT_DIR$/snapshot-stringbuilder/pom.xml" />
       </list>
     </option>
   </component>
