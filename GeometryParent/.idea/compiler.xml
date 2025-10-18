@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="StreamOrdersSorting" />
-        <module name="GeometryParent" />
+        <module name="GeometryLibrary" />
+        <module name="GeometryApp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="forkJoin" target="23" />
+      <module name="GeometryUtils" target="23" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -6,12 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="StreamOrdersSorting" />
-        <module name="GeometryParent" />
+        <module name="count-of-elements" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="forkJoin" target="23" />
-    </bytecodeTargetLevel>
   </component>
 </project>
