@@ -8,5 +8,5 @@ public class Rectangle implements Shape2D {
     }
     @Override public double area()      { return w * h; }
     @Override public double perimeter() { return 2 * (w + h); }
-    @Override public String toString()  { return "Rectangle(" + w + "x" + h + ")"; }
+    @Override public String toString()  { return "Rectangle( w=" + w + "; h= " + h + ")"; }
 }
