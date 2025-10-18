@@ -1,5 +1,6 @@
 package com.example;
 
+import java.math.BigInteger;
 import java.util.concurrent.ForkJoinPool;
 
 public class ForkJoinPoolExample {
@@ -9,7 +10,7 @@ public class ForkJoinPoolExample {
         ForkJoinPool forkJoinPool = new ForkJoinPool();
         FactorialTask factorialTask = new FactorialTask(n);
 
-        long result = forkJoinPool.invoke(factorialTask);
+        BigInteger result = forkJoinPool.invoke(factorialTask);
 
         System.out.println("Факториал " + n + "! = " + result);
     }
