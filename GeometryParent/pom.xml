@@ -6,11 +6,12 @@
 
     <groupId>com.example</groupId>
     <artifactId>GeometryParent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
     <modules>
         <module>GeometryLibrary</module>
         <module>GeometryApp</module>
+        <module>GeometryUtils</module>
     </modules>
 
     <properties>

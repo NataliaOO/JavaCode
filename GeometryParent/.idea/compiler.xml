@@ -8,10 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="GeometryLibrary" />
         <module name="GeometryApp" />
+        <module name="GeometryUtils" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="GeometryUtils" target="23" />
-    </bytecodeTargetLevel>
   </component>
 </project>
