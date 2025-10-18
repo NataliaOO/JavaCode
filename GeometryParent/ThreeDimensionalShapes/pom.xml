@@ -9,21 +9,9 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>GeometryApp</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>GeometryLibrary</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>GeometryUtils</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>ThreeDimensionalShapes</artifactId>
-        </dependency>
-    </dependencies>
+    <artifactId>ThreeDimensionalShapes</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>23</maven.compiler.source>

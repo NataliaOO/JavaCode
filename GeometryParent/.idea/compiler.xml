@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="GeometryLibrary" />
+        <module name="ThreeDimensionalShapes" />
         <module name="GeometryApp" />
         <module name="GeometryUtils" />
       </profile>
