@@ -6,12 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="StreamOrdersSorting" />
         <module name="concurrent-blocking-queue" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="GeometryParent" target="23" />
-    </bytecodeTargetLevel>
   </component>
 </project>

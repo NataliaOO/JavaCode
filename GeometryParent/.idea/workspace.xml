@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e5a5bfa-5be7-417e-b827-71669902f5dd" name="Changes" comment="feat(3d): add ThreeDimensionalShapes 1.0.0-SNAPSHOT (Cube, Sphere)&#10;feat(app): integrate three-dimensional-shapes 1.0.0-SNAPSHOT" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "NataliaOO"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/NataliaOO/JavaCode.git",
+    "accountId": "949a739d-6f6e-4407-b438-faeaceaaf24c"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="34FERYlxYV8fOZENZE198u5F7j1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Maven.GeometryLibrary [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "projectMaven",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Projects/Проекты/Praktika/src/main/java/com/example",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.app.Main" />
+      <module name="GeometryApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e5a5bfa-5be7-417e-b827-71669902f5dd" name="Changes" comment="" />
+      <created>1760800911272</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760800911272</updated>
+      <workItem from="1760800912392" duration="6665000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat(Library and App): create modules">
+      <option name="closed" value="true" />
+      <created>1760802894475</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760802894475</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(geometry-library): bump version to 1.1.0 + add toString() to shapes">
+      <option name="closed" value="true" />
+      <created>1760803034672</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760803034672</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore(app): use geometry-library 1.1.0">
+      <option name="closed" value="true" />
+      <created>1760803168751</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760803168751</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(utils): add GeometryUtils module and integrate into app">
+      <option name="closed" value="true" />
+      <created>1760806501536</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760806501536</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore(deps): align geometry-library to 1.1.0 via dependencyManagement">
+      <option name="closed" value="true" />
+      <created>1760807626752</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760807626752</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat(3d): add ThreeDimensionalShapes 1.0.0-SNAPSHOT (Cube, Sphere)&#10;feat(app): integrate three-dimensional-shapes 1.0.0-SNAPSHOT">
+      <option name="closed" value="true" />
+      <created>1760808748261</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760808748261</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(Library and App): create modules" />
+    <MESSAGE value="feat(geometry-library): bump version to 1.1.0 + add toString() to shapes" />
+    <MESSAGE value="chore(app): use geometry-library 1.1.0" />
+    <MESSAGE value="feat(utils): add GeometryUtils module and integrate into app" />
+    <MESSAGE value="chore(deps): align geometry-library to 1.1.0 via dependencyManagement" />
+    <MESSAGE value="feat(3d): add ThreeDimensionalShapes 1.0.0-SNAPSHOT (Cube, Sphere)&#10;feat(app): integrate three-dimensional-shapes 1.0.0-SNAPSHOT" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(3d): add ThreeDimensionalShapes 1.0.0-SNAPSHOT (Cube, Sphere)&#10;feat(app): integrate three-dimensional-shapes 1.0.0-SNAPSHOT" />
+  </component>
+</project>
