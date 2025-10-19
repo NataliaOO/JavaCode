@@ -19,7 +19,7 @@ public class ConcurrentBank {
 
     public void transfer(BankAccount from, BankAccount to, long amount) {
         if (from == null || to == null) throw new IllegalArgumentException("account is null");
-        if (from == to) return; // перевод сам в себя — ничего не делаем
+        if (from == to) return;
         if (amount <= 0) throw new IllegalArgumentException("amount must be > 0");
 
         // фиксированный порядок захвата локов по id — чтобы избежать дедлоков
@@ -33,8 +33,9 @@ public class ConcurrentBank {
                 to.deposit(amount);
             } else {
                 // недостаточно средств — транзакция атомарно не проходит
-                // можно бросить исключение или просто игнорировать
-                // здесь просто игнорируем
+                // можно бросить исключение
+                System.out.println("Insufficient funds for transfer from account "
+                        + from.getId() + " to account " + to.getId());
             }
         } finally {
             second.unlock();
@@ -51,7 +52,7 @@ public class ConcurrentBank {
         for (BankAccount a : list) a.lock();
         try {
             long sum = 0L;
-            for (BankAccount a : list) sum += a.getBalance(); // getBalance берёт лок, но мы уже под своим — это ок
+            for (BankAccount a : list) sum += a.getBalance();
             return sum;
         } finally {
             for (int i = list.size() - 1; i >= 0; i--) list.get(i).unlock();
