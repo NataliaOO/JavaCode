@@ -12,10 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
-import java.util.List;
-
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -69,6 +66,36 @@ public class UserControllerTest {
                 .andExpect(jsonPath("$.orders").isArray()) // Проверяем, что заказы присутствуют
                 .andExpect(jsonPath("$.orders.length()").value(1)); // Если у пользователя есть один заказ
     }
+
+    @Test
+    public void testCreateUser() throws Exception {
+        String newUserJson = "{\"name\": \"Alice Johnson\", \"email\": \"alice.johnson@example.com\"}";
+
+        mockMvc.perform(post("/api/users")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(newUserJson))
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$.name").value("Alice Johnson"))
+                .andExpect(jsonPath("$.email").value("alice.johnson@example.com"));
+    }
+
+    @Test
+    public void testUpdateUserNotFound() throws Exception {
+        String updatedUserJson = "{\"name\": \"Non-existent User\", \"email\": \"nonexistent@example.com\"}";
+
+        mockMvc.perform(put("/api/users/9999") // 9999 не существует
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(updatedUserJson))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    public void testGetUserNotFound() throws Exception {
+        mockMvc.perform(get("/api/users/9999") // Не существует пользователя с таким ID
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNotFound());
+    }
+
 
 
 
