@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/GeometryParent/GeometryApp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GeometryParent/GeometryApp/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GeometryParent/GeometryLibrary/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GeometryParent/GeometryLibrary/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GeometryParent/GeometryUtils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GeometryParent/GeometryUtils/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GeometryParent/ThreeDimensionalShapes/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GeometryParent/ThreeDimensionalShapes/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GeometryParent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GeometryParent/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/StreamOrdersSorting/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/StreamOrdersSorting/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jsonviewdemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jsonviewdemo/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -7,17 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jsonviewdemo" />
-        <module name="StreamOrdersSorting" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="concurrent-bank" target="23" />
-      <module name="forkJoin" target="23" />
-      <module name="GeometryApp" target="23" />
-      <module name="GeometryLibrary" target="23" />
-      <module name="GeometryParent" target="23" />
-      <module name="GeometryUtils" target="23" />
-      <module name="ThreeDimensionalShapes" target="23" />
-    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jsonviewdemo" options="-parameters" />
+    </option>
   </component>
 </project>
