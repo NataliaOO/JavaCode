@@ -1,0 +1,176 @@
+Index: ../.idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"Encoding\">\r\n    <file url=\"file://$PROJECT_DIR$/StreamOrdersSorting/src/main/java\" charset=\"UTF-8\" />\r\n    <file url=\"file://$PROJECT_DIR$/StreamOrdersSorting/src/main/resources\" charset=\"UTF-8\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/encodings.xml b/../.idea/encodings.xml
+--- a/../.idea/encodings.xml	(revision 7e8d11f4295c5abd164d1aeab8d914db2d540b4a)
++++ b/../.idea/encodings.xml	(date 1761898576630)
+@@ -3,5 +3,7 @@
+   <component name="Encoding">
+     <file url="file://$PROJECT_DIR$/StreamOrdersSorting/src/main/java" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/StreamOrdersSorting/src/main/resources" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/libraryapi/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/libraryapi/src/main/resources" charset="UTF-8" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: ../.idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <module name=\"StreamOrdersSorting\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/compiler.xml b/../.idea/compiler.xml
+--- a/../.idea/compiler.xml	(revision 7e8d11f4295c5abd164d1aeab8d914db2d540b4a)
++++ b/../.idea/compiler.xml	(date 1761898576617)
+@@ -6,8 +6,12 @@
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
++        <module name="libraryapi" />
+         <module name="StreamOrdersSorting" />
+       </profile>
+     </annotationProcessing>
++    <bytecodeTargetLevel>
++      <module name="jsonviewdemo" target="23" />
++    </bytecodeTargetLevel>
+   </component>
+ </project>
+\ No newline at end of file
+Index: ../libraryapi/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../libraryapi/pom.xml b/../libraryapi/pom.xml
+new file mode 100644
+--- /dev/null	(date 1761934694261)
++++ b/../libraryapi/pom.xml	(date 1761934694261)
+@@ -0,0 +1,104 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.example</groupId>
++    <artifactId>library-api</artifactId>
++    <version>1</version>
++    <packaging>jar</packaging>
++
++    <properties>
++        <maven.compiler.source>23</maven.compiler.source>
++        <maven.compiler.target>23</maven.compiler.target>
++        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
++        <springBoot>3.5.7</springBoot>
++    </properties>
++
++    <dependencies>
++        <!-- Spring Boot Dependencies -->
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++            <version>${springBoot}</version>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-data-jpa</artifactId>
++            <version>${springBoot}</version>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-validation</artifactId>
++            <version>${springBoot}</version>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-logging</artifactId>
++            <version>${springBoot}</version>
++        </dependency>
++
++        <!-- PostgreSQL -->
++        <dependency>
++            <groupId>org.postgresql</groupId>
++            <artifactId>postgresql</artifactId>
++            <version>42.5.1</version>
++        </dependency>
++
++        <!-- Lombok for convenience in code (optional) -->
++        <dependency>
++            <groupId>org.projectlombok</groupId>
++            <artifactId>lombok</artifactId>
++            <version>1.18.26</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- Spring Boot Test Dependencies -->
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-test</artifactId>
++            <version>${springBoot}</version>
++            <scope>test</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.projectlombok</groupId>
++            <artifactId>lombok</artifactId>
++            <version>1.18.34</version>
++            <scope>provided</scope>
++        </dependency>
++    </dependencies>
++
++    <build>
++        <plugins>
++            <!-- Добавляем плагин для компиляции с флагом -parameters -->
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <version>3.8.1</version>
++                <configuration>
++                    <source>23</source>
++                    <target>23</target>
++                    <compilerArguments>
++                        <arg>-parameters</arg> <!-- Флаг для сохранения имен параметров -->
++                    </compilerArguments>
++                </configuration>
++            </plugin>
++
++            <plugin>
++                <groupId>org.springframework.boot</groupId>
++                <artifactId>spring-boot-maven-plugin</artifactId>
++                <version>${springBoot}</version>
++                <executions>
++                    <execution>
++                        <goals>
++                            <goal>repackage</goal>
++                        </goals>
++                    </execution>
++                </executions>
++            </plugin>
++        </plugins>
++    </build>
++
++</project>
+\ No newline at end of file
+Index: ../.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/StreamOrdersSorting/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_23\" default=\"true\" project-jdk-name=\"23\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/misc.xml b/../.idea/misc.xml
+--- a/../.idea/misc.xml	(revision 7e8d11f4295c5abd164d1aeab8d914db2d540b4a)
++++ b/../.idea/misc.xml	(date 1761898561928)
+@@ -5,6 +5,7 @@
+     <option name="originalFiles">
+       <list>
+         <option value="$PROJECT_DIR$/StreamOrdersSorting/pom.xml" />
++        <option value="$PROJECT_DIR$/libraryapi/pom.xml" />
+       </list>
+     </option>
+   </component>
