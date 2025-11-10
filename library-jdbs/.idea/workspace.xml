@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="32214ff8-8232-46d5-b016-4e8de1fb26e5" name="Changes" comment="complete jbds" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NataliaOO&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NataliaOO/JavaCode.git&quot;,
+    &quot;accountId&quot;: &quot;949a739d-6f6e-4407-b438-faeaceaaf24c&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="35A2meY99Aa5Qi55eQhV5pVGQzh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.BookControllerTest.executor": "Run",
+    "JUnit.BookControllerTest.testCreateBook.executor": "Run",
+    "JUnit.BookControllerTest.testGetBookById.executor": "Run",
+    "JUnit.BookRepositoryTest.executor": "Run",
+    "JUnit.BookRepositoryTest.testFindAll.executor": "Run",
+    "JUnit.BookRepositoryTest.testSaveBook.executor": "Run",
+    "JUnit.com.example.library in library-jdbs.executor": "Run",
+    "JUnit.library in library-jdbs.executor": "Run",
+    "Maven.library-jdbs [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.Main.executor": "Run",
+    "git-widget-placeholder": "libraryJDBS",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Projects/Проекты/JavaCode",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.BookControllerTest">
+    <configuration name="BookControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library-jdbs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.library.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.library.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.library.controller.BookControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookControllerTest.testGetBookById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library-jdbs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.library.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.library.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.library.controller.BookControllerTest" />
+      <option name="METHOD_NAME" value="testGetBookById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library-jdbs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.library.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.library.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.example.library.repository.BookRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="library in library-jdbs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library-jdbs" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/example/library" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="library-jdbs" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.library.Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.library.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookControllerTest" />
+        <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="JUnit.BookRepositoryTest" />
+        <item itemvalue="JUnit.BookControllerTest.testGetBookById" />
+        <item itemvalue="JUnit.library in library-jdbs" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32214ff8-8232-46d5-b016-4e8de1fb26e5" name="Changes" comment="" />
+      <created>1762538715501</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762538715501</updated>
+      <workItem from="1762538716587" duration="1106000" />
+      <workItem from="1762608931617" duration="35000" />
+      <workItem from="1762609394831" duration="1236000" />
+      <workItem from="1762685701419" duration="38000" />
+      <workItem from="1762765678142" duration="13469000" />
+    </task>
+    <task id="LOCAL-00001" summary="complete jbds">
+      <option name="closed" value="true" />
+      <created>1762780373777</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762780373777</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="complete jbds" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete jbds" />
+  </component>
+</project>

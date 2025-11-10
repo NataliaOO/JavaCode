@@ -7,18 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-data-projections" />
-        <module name="StreamOrdersSorting" />
-        <module name="spring-security" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="library-jdbs" target="23" />
-      <module name="shop-mvc-objectmapper" target="23" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="library-jdbs" options="-parameters" />
       <module name="spring-data-projections" options="-parameters" />
     </option>
   </component>
