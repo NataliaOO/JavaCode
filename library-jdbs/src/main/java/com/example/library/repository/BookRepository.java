@@ -12,9 +12,18 @@ import java.util.Optional;
 public class BookRepository {
 
     private final JdbcTemplate jdbcTemplate;
+    private final RowMapper<Book> bookRowMapper;
 
     public BookRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
+        this.bookRowMapper = (rs, rowNum) -> {
+            Book book = new Book();
+            book.setId(rs.getLong("id"));
+            book.setTitle(rs.getString("title"));
+            book.setAuthor(rs.getString("author"));
+            book.setPublicationYear(rs.getInt("publicationYear"));
+            return book;
+        };
     }
 
     public void save(Book book) {
@@ -24,14 +33,14 @@ public class BookRepository {
 
     public Optional<Book> findById(Long id) {
         String sql = "SELECT * FROM book WHERE id = ?";
-        List<Book> books = jdbcTemplate.query(sql, new Object[]{id}, bookRowMapper());
+        List<Book> books = jdbcTemplate.query(sql, new Object[]{id}, bookRowMapper);
 
         return books.isEmpty() ? Optional.empty() : Optional.of(books.get(0));
     }
 
     public List<Book> findAll() {
         String sql = "SELECT * FROM book";
-        return jdbcTemplate.query(sql, bookRowMapper());
+        return jdbcTemplate.query(sql, bookRowMapper);
     }
 
     public Book update(Long id, Book book) {
@@ -43,16 +52,5 @@ public class BookRepository {
     public void delete(Long id) {
         String sql = "DELETE FROM book WHERE id = ?";
         jdbcTemplate.update(sql, id);
-    }
-
-    private RowMapper<Book> bookRowMapper() {
-        return (rs, rowNum) -> {
-            Book book = new Book();
-            book.setId(rs.getLong("id"));
-            book.setTitle(rs.getString("title"));
-            book.setAuthor(rs.getString("author"));
-            book.setPublicationYear(rs.getInt("publicationYear"));
-            return book;
-        };
     }
 }

@@ -3,7 +3,7 @@ package com.example.library.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
-@Table("BOOKS")
+@Table("book")
 public class Book {
 
     @Id
