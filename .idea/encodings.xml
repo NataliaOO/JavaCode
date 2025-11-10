@@ -3,5 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/StreamOrdersSorting/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/StreamOrdersSorting/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/library-jdbs/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/library-jdbs/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-mvc-objectmapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-mvc-objectmapper/src/main/resources" charset="UTF-8" />
   </component>
 </project>

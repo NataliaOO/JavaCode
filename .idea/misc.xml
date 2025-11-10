@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/StreamOrdersSorting/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-mvc-objectmapper/pom.xml" />
+        <option value="$PROJECT_DIR$/library-jdbs/pom.xml" />
       </list>
     </option>
   </component>
