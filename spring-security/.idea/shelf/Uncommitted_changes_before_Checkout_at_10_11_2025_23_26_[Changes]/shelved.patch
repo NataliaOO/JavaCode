@@ -1,0 +1,48 @@
+Index: ../.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/JavaCode.iml\" filepath=\"$PROJECT_DIR$/.idea/JavaCode.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/modules.xml b/../.idea/modules.xml
+--- a/../.idea/modules.xml	(revision 2e3bbbd73060a768d5f359434c374b55799bb8b3)
++++ b/../.idea/modules.xml	(date 1762800436376)
+@@ -3,6 +3,8 @@
+   <component name="ProjectModuleManager">
+     <modules>
+       <module fileurl="file://$PROJECT_DIR$/.idea/JavaCode.iml" filepath="$PROJECT_DIR$/.idea/JavaCode.iml" />
++      <module fileurl="file://$PROJECT_DIR$/library-jdbs/library-jdbs.iml" filepath="$PROJECT_DIR$/library-jdbs/library-jdbs.iml" />
++      <module fileurl="file://$PROJECT_DIR$/shop-mvc-objectmapper/shop-mvc-objectmapper.iml" filepath="$PROJECT_DIR$/shop-mvc-objectmapper/shop-mvc-objectmapper.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
+Index: ../.idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <module name=\"spring-data-projections\" />\r\n        <module name=\"StreamOrdersSorting\" />\r\n        <module name=\"spring-security\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n    <bytecodeTargetLevel>\r\n      <module name=\"library-jdbs\" target=\"23\" />\r\n      <module name=\"shop-mvc-objectmapper\" target=\"23\" />\r\n    </bytecodeTargetLevel>\r\n  </component>\r\n  <component name=\"JavacSettings\">\r\n    <option name=\"ADDITIONAL_OPTIONS_OVERRIDE\">\r\n      <module name=\"library-jdbs\" options=\"-parameters\" />\r\n      <module name=\"spring-data-projections\" options=\"-parameters\" />\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/compiler.xml b/../.idea/compiler.xml
+--- a/../.idea/compiler.xml	(revision 2e3bbbd73060a768d5f359434c374b55799bb8b3)
++++ b/../.idea/compiler.xml	(date 1762800436384)
+@@ -12,7 +12,7 @@
+       </profile>
+     </annotationProcessing>
+     <bytecodeTargetLevel>
+-      <module name="library-jdbs" target="23" />
++      <module name="library-jdbs" target="17" />
+       <module name="shop-mvc-objectmapper" target="23" />
+     </bytecodeTargetLevel>
+   </component>
+@@ -20,6 +20,7 @@
+     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+       <module name="library-jdbs" options="-parameters" />
+       <module name="spring-data-projections" options="-parameters" />
++      <module name="spring-security" options="-parameters" />
+     </option>
+   </component>
+ </project>
+\ No newline at end of file

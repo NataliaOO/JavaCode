@@ -6,14 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo-jwt" />
-        <module name="StreamOrdersSorting" />
         <module name="demo-objectmapper" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spring-data-projections" target="23" />
-      <module name="spring-security" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
