@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">OAuth2 Error</title>
+</head>
+<body>
+<h1 th:text="${title}">GitHub login error</h1>
+<p th:text="${message}">
+    There was an error signing in with GitHub. Please try again.
+</p>
+
+<p>
+    <a href="/">Home</a> |
+    <a href="/oauth2/authorization/github">Login with GitHub</a>
+</p>
+
+</body>
+</html>

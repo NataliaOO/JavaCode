@@ -3,5 +3,11 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/StreamOrdersSorting/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/StreamOrdersSorting/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-jwt/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-jwt/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-oauth2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-oauth2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-objectmapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-objectmapper/src/main/resources" charset="UTF-8" />
   </component>
 </project>

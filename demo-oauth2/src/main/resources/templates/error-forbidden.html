@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">Forbidden</title>
+</head>
+<body>
+<h1 th:text="${title}">Insufficient permissions</h1>
+<p th:text="${message}">
+    You do not have permission to access this resource.
+</p>
+
+<p>
+    <a href="/user">User page</a> |
+    <a href="/">Home</a>
+</p>
+
+</body>
+</html>
